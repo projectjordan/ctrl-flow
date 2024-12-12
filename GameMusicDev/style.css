@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: .25rem;
+}
+
+::-webkit-scrollbar-track {
+    background: hsl(48, 9%, 77%);
+}
+
+::-webkit-scrollbar-thumb {
+    background: hsl(207, 23%, 46%);
+    border-radius: 8px;
+}
+
+body {
+    background-color: hsl(47, 100%, 100%);
+}
+
+nav {
+    border: 1px solid black;
+    text-align: center;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+nav li {
+    display: inline;
+    margin-right: 2rem;
+}
+
+nav li a {
+    text-decoration: none;
+    width: 100%;
+}   
+
+header {
+    margin-bottom: 1em;
+    justify-content: center;
+    text-align: center;
+}
+
+header h1 {
+    width: 100%;
+    text-decoration: underline;
+    transition: all .5s ease-in-out;
+    margin-bottom: 1rem;
+    cursor: all-scroll;
+    user-select: none;
+}
+
+header h1:hover {
+    transform: scale(1.025);
+    filter: drop-shadow(2px 3px 5px hsl(224, 12%, 61%));
+}
+
+header p {
+    font-style: italic;
+}
+
+.blogContainer {
+    margin: .5rem auto;
+    align-items: center;
+    justify-content: center;
+    columns: 325px;
+    width: 100vw;
+    max-width: 80%;
+}
+
+img {
+    width: 100%;
+    margin-bottom: 1em;
+    border: 1px solid black;
+    filter: drop-shadow(1px 2px 5px black) brightness(100%);
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.050);
+    filter: brightness(115%) drop-shadow(2px 3px 5px hsl(0, 59%, 56%));
+}
